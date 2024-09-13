@@ -123,3 +123,19 @@ body {
     font-size: 14px;
   }
 }
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
