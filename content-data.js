@@ -8,8 +8,8 @@ const animeShows = [
   
   const animeMovies = [
     { title: 'Spirited Away', imgSrc: 'https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UX380_CR0,0,380,562_.jpg', description: 'A magical journey into a mysterious world' },
-    { title: 'Your Name', imgSrc: 'https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png', description: 'A beautiful tale of two strangers whose lives are mysteriously linked' },
-    { title: 'Weathering with You', imgSrc: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Weathering_with_You_Poster.jpg/220px-Weathering_with_You_Poster.jpg', description: 'Weathering with You is a lyrical journey where love’s light intertwines with the storm, reshaping the world’s skies' },
+    { title: 'Your Name', imgSrc: 'https://picfiles.alphacoders.com/504/50493.jpg', description: 'A beautiful tale of two strangers whose lives are mysteriously linked' },
+    { title: 'Weathering with You', imgSrc: 'https://m.media-amazon.com/images/M/MV5BMDkwMWFiMTgtMTgxZC00ZTU1LWI0N2ItMGFiZTdjMDQ1YTE4XkEyXkFqcGc@._V1_.jpg', description: 'Weathering with You is a lyrical journey where love’s light intertwines with the storm, reshaping the world’s skies' },
     { title: '5 Centimeters per Second', imgSrc: 'https://m.media-amazon.com/images/M/MV5BODVmZjhhYTYtYzRiOC00YzFiLThlZjMtZTQxNWY0MTI1MzlmXkEyXkFqcGc@._V1_FMjpg_UX739_.jpg', description: 'A poignant tale of love and separation, where time drifts like falling petals.' },
     { title: 'Grave of the Fireflies', imgSrc: 'https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg', description: 'A tender, haunting tale of innocence lost amidst the darkness of war' },
   ];
