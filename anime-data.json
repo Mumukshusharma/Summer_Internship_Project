@@ -1,0 +1,110 @@
+[
+{
+"id": 1,
+"title": "Naruto",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX680_.jpg",
+"description": "Follow the journey of Naruto Uzumaki",
+"fullDescription": "Naruto Uzumaki dreams of becoming Hokage, the strongest ninja leader in his village. Watch his growth through hardship, friendship, and epic battles.",
+"genre": "Action, Adventure, Shounen",
+"episodes": 220
+},
+{
+"id": 2,
+"title": "Attack on Titan",
+"imgSrc": "https://images-cdn.ubuy.co.id/63b6146ddecbee137603e92a-attack-on-titan-24-x-36-poster-by-movie.jpg",
+"description": "The fight against the titans begins",
+"fullDescription": "Eren Yeager joins the Scout Regiment to fight giant man-eating titans threatening humanity’s survival behind walled cities.",
+"genre": "Action, Drama, Dark Fantasy",
+"episodes": 87
+},
+{
+"id": 3,
+"title": "One Piece",
+"imgSrc": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+"description": "Join Luffy on his quest for the One Piece",
+"fullDescription": "Monkey D. Luffy sails across dangerous seas with his crew to find the legendary treasure called One Piece and become the Pirate King.",
+"genre": "Adventure, Comedy, Action",
+"episodes": 1000
+},
+{
+"id": 4,
+"title": "Demon Slayer",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BYTIxNjk3YjItYmYzMC00ZTdmLTk0NGUtZmNlZTA0NWFkZDMwXkEyXkFqcGdeQXVyNjAwNDUxODI@.V1_FMjpg_UX1200.jpg",
+"description": "Tanjiro Kamado battles demons to save his sister",
+"fullDescription": "After a demon attack kills his family, Tanjiro joins the Demon Slayer Corps to protect others and find a cure for his demon-turned sister Nezuko.",
+"genre": "Action, Supernatural, Drama",
+"episodes": 44
+},
+{
+"id": 5,
+"title": "Mob Psycho 100",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BYWIwZjhkMzgtOWExYi00ZGIwLTg1ZTktNjQyZWIxYWFmZTc0XkEyXkFqcGdeQXVyNjAwNDUxODI@.V1.jpg",
+"description": "A psychic's quest for self-discovery",
+"fullDescription": "Mob, a shy teen with immense psychic powers, tries to live a normal life and control his emotions while dealing with spirits and rival espers.",
+"genre": "Action, Supernatural, Comedy",
+"episodes": 37
+},
+{
+"id": 6,
+"title": "Spirited Away",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@.V1_QL75_UX380_CR0,0,380,562.jpg",
+"description": "A magical journey into a mysterious world",
+"fullDescription": "Chihiro wanders into a spiritual world and must work in a bathhouse to free her parents and return home. A Studio Ghibli masterpiece.",
+"genre": "Fantasy, Supernatural, Adventure",
+"episodes": 1
+},
+{
+"id": 7,
+"title": "Your Name",
+"imgSrc": "https://picfiles.alphacoders.com/504/50493.jpg",
+"description": "A tale of two strangers whose lives are linked",
+"fullDescription": "Taki and Mitsuha wake up in each other’s bodies across time and space. A breathtaking story of love and fate.",
+"genre": "Romance, Drama, Supernatural",
+"episodes": 1
+},
+{
+"id": 8,
+"title": "Grave of the Fireflies",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@.V1.jpg",
+"description": "A haunting tale of war and loss",
+"fullDescription": "A young boy and his sister struggle to survive in WWII Japan. A deeply emotional story about the toll of war on innocent lives.",
+"genre": "Drama, Historical, War",
+"episodes": 1
+},
+{
+"id": 9,
+"title": "Howl's Moving Castle",
+"imgSrc": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/howls_moving_castle_1_9.png",
+"description": "A mysterious castle, a cursed girl, and a heartwarming tale",
+"fullDescription": "Sophie is cursed to become an old woman and seeks help from the mysterious wizard Howl who lives in a magical moving castle.",
+"genre": "Fantasy, Romance, Adventure",
+"episodes": 1
+},
+{
+"id": 10,
+"title": "Hunter x Hunter (1999)",
+"imgSrc": "https://m.media-amazon.com/images/I/71KFW59FfKL.AC_UF894,1000_QL80.jpg",
+"description": "A young boy becomes a Hunter like his father",
+"fullDescription": "Gon Freecss journeys to find his father and become a Hunter, facing dangerous trials and forming unbreakable friendships.",
+"genre": "Adventure, Action, Fantasy",
+"episodes": 62
+},
+{
+"id": 11,
+"title": "Bleach",
+"imgSrc": "https://m.media-amazon.com/images/M/MV5BMGU5OTAxNGYtNzU3NC00ZTI1LWJlYmMtYjZkYjY1ZTI3N2ZjXkEyXkFqcGdeQXVyODkzNTgxMDg@.V1_FMjpg_UX1000.jpg",
+"description": "A teenager becomes a Soul Reaper",
+"fullDescription": "Ichigo Kurosaki gains the power of a Soul Reaper and defends the world from evil spirits while uncovering secrets of the soul society.",
+"genre": "Action, Supernatural, Shounen",
+"episodes": 366
+},
+{
+"id": 12,
+"title": "Cowboy Bebop",
+"imgSrc": "https://m.media-amazon.com/images/I/71FU5A3lS1L.AC_UF894,1000_QL80.jpg",
+"description": "Space bounty hunters chase danger and their pasts",
+"fullDescription": "In a futuristic space setting, a crew of bounty hunters called the Bebop take on missions while confronting their emotional pasts.",
+"genre": "Sci-Fi, Action, Drama",
+"episodes": 26
+}
+]
