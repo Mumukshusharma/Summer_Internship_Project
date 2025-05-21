@@ -14,9 +14,35 @@ const animeShows = [
     { title: 'Grave of the Fireflies', imgSrc: 'https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg', description: 'A tender, haunting tale of innocence lost amidst the darkness of war' },
     { title: 'Howls Moving Castle', imgSrc: 'https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/howls_moving_castle_1_9.png', description: 'A tender, haunting tale of innocence lost amidst the darkness of war' },
   ];
-  
+  const classicAnime = [
+  {
+    title: 'Dragon Ball Z',imgSrc: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-ZhnFNOeCU5dQ.png',
+    description: 'Goku defends Earth from formidable foes across the galaxy.'
+  },
+  {
+    title: 'Neon Genesis Evangelion',imgSrc: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx30-AI1zr74Dh4ye.jpg',
+    description: 'A deep psychological mecha drama set in a post-apocalyptic world.'
+  },
+  {
+    title: 'Cowboy Bebop',imgSrc: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1-GCsPm7waJ4kS.png',
+    description: 'Space bounty hunters chasing criminals while confronting their pasts.'
+  },
+  {
+    title: 'Bleach',
+    imgSrc: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png',
+    description: 'Ichigo Kurosaki becomes a Soul Reaper and fights against deadly spirits known as Hollows.'
+  },
+  {
+    title: 'Hunter x Hunter (1999)',
+    imgSrc: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136-gj0bbCpDNrKG.jpg',
+    description: 'Gon Freecss sets off to become a Hunter and find his father while facing deadly trials.'
+  },
+];
+
   const animeShowsGrid = document.getElementById('anime-shows');
   const animeMoviesGrid = document.getElementById('anime-movies');
+  const classicAnimeGrid = document.getElementById('classic-anime');
+
   
   function loadAnimeContent(contentArray, targetGrid) {
     contentArray.forEach(content => {
@@ -34,4 +60,6 @@ const animeShows = [
   
   loadAnimeContent(animeShows, animeShowsGrid);
   loadAnimeContent(animeMovies, animeMoviesGrid);
+  loadAnimeContent(classicAnime, classicAnimeGrid);
+
   
