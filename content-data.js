@@ -131,8 +131,8 @@ function viewDetails(id) {
 
 
   
-  loadAnimeContent(animeShows, animeShowsGrid);
-  loadAnimeContent(animeMovies, animeMoviesGrid);
-  loadAnimeContent(classicAnime, classicAnimeGrid);
+loadAnimeContent(animeShows, document.getElementById("anime-shows"));
+loadAnimeContent(animeMovies, document.getElementById("anime-movies"));
+loadAnimeContent(classicAnime, document.getElementById("classic-anime"));
 
   
