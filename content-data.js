@@ -125,12 +125,11 @@ const animeShows = [
 }
 
 function viewDetails(id) {
+  console.log("Selected ID:", id); // Debug line
   localStorage.setItem("selectedAnimeId", id);
   window.location.href = "anime.html";
 }
 
-
-  
 loadAnimeContent(animeShows, document.getElementById("anime-shows"));
 loadAnimeContent(animeMovies, document.getElementById("anime-movies"));
 loadAnimeContent(classicAnime, document.getElementById("classic-anime"));
