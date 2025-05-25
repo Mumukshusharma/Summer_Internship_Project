@@ -4,25 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anime Detail</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="anime-detail" class="anime-detail-container">
-    <h1 id="anime-title">Loading...</h1>
-    <img id="anime-img" src="" alt="" class="anime-img"/>
-    <p id="anime-description"></p>
-    <ul>
-      <li><strong>Genre:</strong> <span id="anime-genre"></span></li>
-      <li><strong>Rating:</strong> <span id="anime-rating"></span></li>
-      <li><strong>Studio:</strong> <span id="anime-studio"></span></li>
-      <li><strong>Release Year:</strong> <span id="anime-release-year"></span></li>
-    </ul>
+  <div id="banner"></div>
 
-    <div id="anime-trailer" class="trailer-container">
-      <p>Loading trailer...</p>
+  <div class="anime-detail-wrapper">
+    <!-- Left: Poster -->
+    <div class="anime-poster-box">
+      <img id="poster" src="" alt="Anime Poster" />
+
+    </div>
+
+    <!-- Right: Info -->
+    <div class="anime-info-section">
+      <h2 id="anime-title">Title</h2>
+      <p class="description" id="anime-description">Loading description...</p>
+      <div class="meta">
+        <p><strong>Genre:</strong> <span id="anime-genre"></span></p>
+        <p><strong>Episodes:</strong> <span id="anime-episodes"></span></p>
+        <p><strong>Rating:</strong> <span id="anime-rating"></span></p>
+        <p><strong>Studio:</strong> <span id="anime-studio"></span></p>
+        <p><strong>Release Year:</strong> <span id="anime-year"></span></p>
+      </div>
+
+      <div class="status-control">
+        <label for="status"><strong>Status:</strong></label>
+        <select id="status">
+          <option value="">-- Select --</option>
+          <option value="Watching">Watching</option>
+          <option value="Completed">Completed</option>
+          <option value="On-Hold">On-Hold</option>
+          <option value="Dropped">Dropped</option>
+          <option value="Plan to Watch">Plan to Watch</option>
+        </select>
+        <p><strong>Your Status:</strong> <span id="user-status">None</span></p>
+      </div>
+
+      <p><a href="index.html">← Back to Home</a></p>
     </div>
   </div>
 
+<!-- Trailer Section -->
+<div id="anime-trailer" class="anime-trailer-section"></div>
+
+
   <script src="anime-detail.js"></script>
+  <script src="user-tracking.js"></script>
 </body>
 </html>

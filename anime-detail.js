@@ -1,49 +1,60 @@
 // Get slug from URL
 const urlParams = new URLSearchParams(window.location.search);
-const animeSlug = urlParams.get("id");
+const rawId = urlParams.get("id");
 
-// Robust slug maker
+// Normalize title to slug
 function createSlug(title) {
-  return title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-// Load data
 fetch("anime-data.json")
-  .then(res => {
-    if (!res.ok) throw new Error("JSON file not found");
-    return res.json();
-  })
+  .then(res => res.json())
   .then(data => {
-    const anime = data.find(a => createSlug(a.title) === animeSlug);
+    const anime = data.find(a => createSlug(a.title) === rawId);
 
     if (!anime) {
-      document.getElementById("anime-detail").innerHTML = "<h2>Anime not found</h2>";
+      document.getElementById("anime-title").textContent = "Anime not found";
       return;
     }
 
-    // Populate page
-    document.getElementById("anime-title").textContent = anime.title;
-    document.getElementById("anime-img").src = anime.imgSrc;
-    document.getElementById("anime-img").alt = anime.title;
-    document.getElementById("anime-description").textContent = anime.fullDescription || anime.description;
-    document.getElementById("anime-genre").textContent = anime.genre || "Unknown";
-    document.getElementById("anime-rating").textContent = anime.rating || "N/A";
-    document.getElementById("anime-studio").textContent = anime.studio || "Unknown";
-    document.getElementById("anime-release-year").textContent = anime.releaseYear || "Unknown";
+    // Set banner image
+    document.getElementById("banner").style.backgroundImage = `url('${anime.bannerImage || anime.imgSrc}')`;
+    document.getElementById("poster").src = anime.imgSrc;
 
-    // Trailer (optional)
+
+    // Set content
+    document.getElementById("poster").src = anime.imgSrc;
+    document.getElementById("poster").alt = anime.title;
+    document.getElementById("anime-title").textContent = anime.title;
+    document.getElementById("anime-description").textContent = anime.fullDescription || anime.description;
+    document.getElementById("anime-genre").textContent = anime.genre;
+    document.getElementById("anime-episodes").textContent = anime.episodes;
+    document.getElementById("anime-rating").textContent = anime.rating;
+    document.getElementById("anime-studio").textContent = anime.studio;
+    document.getElementById("anime-year").textContent = anime.releaseYear;
+
+    // Embed trailer if available
     if (anime.trailerUrl) {
       document.getElementById("anime-trailer").innerHTML = `
-        <iframe width="560" height="315" src="${anime.trailerUrl}" 
-          title="YouTube trailer" frameborder="0" allowfullscreen></iframe>`;
+        <h2>Watch Trailer</h2>
+        <iframe width="100%" height="450" src="${anime.trailerUrl}"
+        frameborder="0" allowfullscreen></iframe>`;
     } else {
       document.getElementById("anime-trailer").innerHTML = "<p>No trailer available.</p>";
     }
+
+    // Load user status from localStorage
+    const status = localStorage.getItem(`anime-status-${anime.title}`) || "None";
+    document.getElementById("user-status").textContent = status;
+    document.getElementById("status").value = status;
+
+    document.getElementById("status").addEventListener("change", (e) => {
+      const newStatus = e.target.value;
+      localStorage.setItem(`anime-status-${anime.title}`, newStatus);
+      document.getElementById("user-status").textContent = newStatus;
+    });
   })
-  .catch(error => {
-    console.error("Error loading data:", error);
-    document.getElementById("anime-detail").innerHTML = "<h2>Failed to load data.</h2>";
+  .catch(err => {
+    console.error("Error fetching anime data:", err);
+    document.getElementById("anime-title").textContent = "Failed to load data";
   });
