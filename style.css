@@ -164,6 +164,11 @@ nav ul li a:hover {
   position: relative;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-section {
@@ -205,14 +210,17 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-.card button {
+.card .watch-button {
   background-color: #e50914;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+  align-items: center;
 }
 
 .card::before {

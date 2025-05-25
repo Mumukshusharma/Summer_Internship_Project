@@ -1,3 +1,4 @@
+// Anime categories
 const animeShows = [
   {
     id: 1,
@@ -31,8 +32,7 @@ const animeShows = [
   }
 ];
 
-  
- const animeMovies = [
+const animeMovies = [
   {
     id: 6,
     title: 'Spirited Away',
@@ -71,7 +71,7 @@ const animeShows = [
   }
 ];
 
-  const classicAnime = [
+const classicAnime = [
   {
     id: 12,
     title: 'Dragon Ball Z',
@@ -104,34 +104,35 @@ const animeShows = [
   }
 ];
 
+// Containers
+const animeShowsGrid = document.getElementById('anime-shows');
+const animeMoviesGrid = document.getElementById('anime-movies');
+const classicAnimeGrid = document.getElementById('classic-anime');
 
-  const animeShowsGrid = document.getElementById('anime-shows');
-  const animeMoviesGrid = document.getElementById('anime-movies');
-  const classicAnimeGrid = document.getElementById('classic-anime');
+// Combine all anime
+const allAnime = [...animeShows, ...animeMovies, ...classicAnime];
 
-  
-  function loadAnimeContent(contentArray, targetGrid) {
-  contentArray.forEach(content => {
-    const card = document.createElement('div');
-    card.classList.add('card');
-    card.innerHTML = `
-      <img src="${content.imgSrc}" alt="${content.title}">
-      <h3>${content.title}</h3>
-      <p>${content.description}</p>
-      <button onclick="viewDetails(${content.id})">More Info</button>
-    `;
-    targetGrid.appendChild(card);
-  });
+// Slugify helper
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
-function viewDetails(id) {
-  console.log("Selected ID:", id); // Debug line
-  localStorage.setItem("selectedAnimeId", id);
-  window.location.href = "anime.html";
-}
+// Generate cards with <a> tag
+allAnime.forEach(anime => {
+  const card = document.createElement('a');
+  card.href = `anime.html?id=${slugify(anime.title)}`;
+  card.className = 'card';
+  card.innerHTML = `
+    <img src="${anime.imgSrc}" alt="${anime.title}">
+    <h3>${anime.title}</h3>
+    <p>${anime.description}</p>
+    <span class="watch-button">Watch Now</span>
+  `;
 
-loadAnimeContent(animeShows, document.getElementById("anime-shows"));
-loadAnimeContent(animeMovies, document.getElementById("anime-movies"));
-loadAnimeContent(classicAnime, document.getElementById("classic-anime"));
-
-  
+  if (anime.id <= 5) animeShowsGrid.appendChild(card);
+  else if (anime.id <= 11) animeMoviesGrid.appendChild(card);
+  else classicAnimeGrid.appendChild(card);
+});
